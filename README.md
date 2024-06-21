@@ -28,6 +28,19 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+
+- This project was an assignment required to implement very basic APIs for an e-commerce app.
+- It includes basic CRUD operations for two main entities: cart and order.
+- It is beginner-friendly, focusing on learning Nest.js and Swagger.
+- The project was completed within two days.
+
+### Resources to Learn Nest.js
+
+To learn more about Nest.js, you can check out the following resources:
+
+- [Nest.js Official Documentation](https://docs.nestjs.com/)
+- [YouTube Tutorial: Nest.js Crash Course](https://youtu.be/GHTA143_b-s?si=TSMXYOfi9utLHTYb)
+
 ## Installation
 
 ```bash
@@ -73,8 +86,6 @@ To run the application with Docker Compose, follow these steps:
      [http://localhost:3000/api](http://localhost:3000/api)
   
 
-
-
 ### Cloning Steps
 
 To clone this repository and get started, use the following commands:
@@ -103,16 +114,66 @@ You can test the API endpoints using Postman. Import the provided collection int
 3. Import the collection `NestJS_API.postman_collection.json` located in the `postman` directory.
 4. Test the endpoints as needed.
 
+
+### Contribution
+
+This project welcomes contributions from anyone interested in learning or improving their skills with Nest.js. It's especially beginner-friendly, offering opportunities for refactoring practice and getting acquainted with the framework.
+
+#### How to Contribute
+
+1. Fork the repository and clone it locally.
+   
+   ```bash
+   $ git clone https://github.com/your-username/nest.git
+   $ cd nest
+   ```
+
+2. Create a new branch for your changes.
+
+   ```bash
+   $ git checkout -b feature/your-feature-name
+   ```
+
+3. Make your modifications and improvements, focusing on refactoring or enhancing the existing codebase.
+
+4. Test your changes thoroughly.
+
+5. Commit your changes and push to your forked repository.
+
+   ```bash
+   $ git add .
+   $ git commit -m "Add your commit message here"
+   $ git push origin feature/your-feature-name
+   ```
+
+6. Open a pull request against the `main` branch of the original repository.
+
+#### Ways to Contribute
+
+- Refactor existing code for clarity and maintainability.
+- Add missing comments or documentation.
+- Implement small features or enhancements.
+- Improve test coverage or add new tests.
+
+#### Contribution Guidelines
+
+- Follow the existing code style and conventions.
+- Ensure your changes do not introduce linting errors or warnings.
+- Write clear commit messages and PR descriptions.
+
+By contributing to this project, you'll gain valuable experience with Nest.js and software development best practices. Don't hesitate to ask questions or seek guidance if you're new to contributing to open-source projects.
+
+
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- [Raneem Yasser](ranyseleem@gmail.com)
 
+  
 ## License
 
 Nest is [MIT licensed](LICENSE).
