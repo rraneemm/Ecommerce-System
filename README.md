@@ -114,12 +114,16 @@ You can test the API endpoints using Postman. Import the provided collection int
 3. Import the collection `NestJS_API.postman_collection.json` located in the `postman` directory.
 4. Test the endpoints as needed.
 
+## Database Diagram
+This is a diagram that showcases the database relations and entities.
 
-### Contribution
+**Database Diagram** at `db-diagram/e-commerce assessment.pdf`
+
+## Contribution
 
 This project welcomes contributions from anyone interested in learning or improving their skills with Nest.js. It's especially beginner-friendly, offering opportunities for refactoring practice and getting acquainted with the framework.
 
-#### How to Contribute
+### How to Contribute
 
 1. Fork the repository and clone it locally.
    
@@ -148,21 +152,20 @@ This project welcomes contributions from anyone interested in learning or improv
 
 6. Open a pull request against the `main` branch of the original repository.
 
-#### Ways to Contribute
+### Ways to Contribute
 
 - Refactor existing code for clarity and maintainability.
 - Add missing comments or documentation.
 - Implement small features or enhancements.
 - Improve test coverage or add new tests.
 
-#### Contribution Guidelines
+### Contribution Guidelines
 
 - Follow the existing code style and conventions.
 - Ensure your changes do not introduce linting errors or warnings.
 - Write clear commit messages and PR descriptions.
 
 By contributing to this project, you'll gain valuable experience with Nest.js and software development best practices. Don't hesitate to ask questions or seek guidance if you're new to contributing to open-source projects.
-
 
 
 ## Support
