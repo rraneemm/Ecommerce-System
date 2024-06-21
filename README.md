@@ -70,9 +70,8 @@ To run the application with Docker Compose, follow these steps:
 
      Once the application is running, you can access the Swagger UI to explore and test the API endpoints. The Swagger UI is typically available at:
 
-   ```bash
-   [http://localhost:3000/api](http://localhost:3000/api)
-  ```
+     [http://localhost:3000/api](http://localhost:3000/api)
+  
 
 
 
