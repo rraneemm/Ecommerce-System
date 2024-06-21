@@ -24,10 +24,9 @@ model Users {
   name    String?
   address String?
 
-  cartId Int  @unique
-  cart   Cart @relation(fields: [cartId], references: [cartId])
-
   Orders Orders[]
+
+  Cart Cart?
 }
 
 model Products {
@@ -39,7 +38,7 @@ model Products {
   price Int?
   stock Int?
 
-  carts Cart[]
+  CartItem CartItem[]
 }
 
 model Orders {
@@ -58,9 +57,24 @@ model Orders {
 model Cart {
   cartId Int @id @default(autoincrement())
 
-  Products Products[]
+  userId Int   @unique
+  user   Users @relation(fields: [userId], references: [userId])
 
   Orders Orders?
 
-  Users Users?
+  CartItem CartItem[]
+}
+
+model CartItem {
+  id Int @id @default(autoincrement())
+
+  productId  Int
+  quantity   Int
+  totalPrice Int
+  product    Products @relation(fields: [productId], references: [productId])
+
+  cartId Int
+  cart   Cart @relation(fields: [cartId], references: [cartId])
+
+  @@unique(name: "cartId_productId", [cartId, productId])
 }
