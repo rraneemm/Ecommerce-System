@@ -45,18 +45,14 @@ $ pnpm run start:dev
 $ pnpm run start:prod
 ```
 
-## Test
+## Testing API Endpoints
 
-```bash
-# unit tests
-$ pnpm run test
+You can test the API endpoints using Postman. Import the provided collection into Postman and start testing:
 
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
-```
+1. Start the Nest application.
+2. Open Postman.
+3. Import the collection `NestJS_API.postman_collection.json` located in the `postman` directory.
+4. Test the endpoints as needed.
 
 ## Support
 
