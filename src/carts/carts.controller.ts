@@ -13,7 +13,7 @@ import { CartItemDto, RemoveCartItemDto } from './cart.dto';
 import { ApiBody, ApiResponse, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('Cart')
-@Controller('api/cart')
+@Controller('cart')
 export class CartsController {
   constructor(private cartService: CartService) {}
 
