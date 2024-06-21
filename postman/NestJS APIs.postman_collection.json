@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "e9f024b5-04c3-49a3-95e7-b9dec94526b5",
+		"name": "NestJS APIs",
+		"description": "A collection of requests to test APIs for the provided project.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23676520"
+	},
+	"item": [
+		{
+			"name": "Add Products to Cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\":\"prod1\",\r\n    \"description\":\"this is\",\r\n    \"price\":40,\r\n    \"stock\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/products/add"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order by OrderID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/orders/14"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Order Status",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\":\"SHIPPED\",\r\n    \"cartId\":5,\r\n    \"userId\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/orders/15/status"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Quantity of a product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/cart/update"
+			},
+			"response": []
+		},
+		{
+			"name": "View Cart Components by userId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/cart/:userId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cart",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3000/api/orders"
+			},
+			"response": []
+		}
+	]
+}
