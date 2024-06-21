@@ -117,7 +117,13 @@ You can test the API endpoints using Postman. Import the provided collection int
 ## Database Diagram
 This is a diagram that showcases the database relations and entities.
 
-**Database Diagram** at `db-diagram/e-commerce assessment.pdf`
+**Database Diagram** at 
+
+`db-diagram/e-commerce assessment.pdf`
+
+OR
+
+https://dbdocs.io/ranyseleem/simple-e-commerce?view=relationships
 
 ## Contribution
 
