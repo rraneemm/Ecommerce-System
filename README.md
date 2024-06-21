@@ -48,11 +48,42 @@ $ pnpm run start:prod
 ```
 
 ## Docker Setup
-To run the application with Docker Compose:
+
+To run the application with Docker Compose, follow these steps:
+
+1. **Clone the repository:**
+
+   ```bash
+   $ git clone https://github.com/nestjs/nest.git
+   $ cd nest
+   ```
+
+2. **Build and start the Docker containers:**
+
+   ```bash
+   $ docker-compose up -d
+   ```
+
+   This command will start the application containers in detached mode.
+
+### Cloning Steps
+
+To clone this repository and get started, use the following commands:
 
 ```bash
-$ docker-compose up -d
+$ git clone https://github.com/nestjs/nest.git
+$ cd nest
 ```
+
+### Running Environment
+
+Make sure you have Node.js and pnpm installed. Then, install dependencies and start the application:
+
+```bash
+$ pnpm install
+$ pnpm run start:dev
+```
+
 
 ## Testing API Endpoints
 
