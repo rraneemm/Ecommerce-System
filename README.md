@@ -65,6 +65,14 @@ To run the application with Docker Compose, follow these steps:
    ```
 
    This command will start the application containers in detached mode.
+   
+  3. **Access Swagger UI:**
+
+   Once the application is running, you can access the Swagger UI to explore and test the API endpoints. The Swagger UI is typically available at:
+
+   [http://localhost:3000/api](http://localhost:3000/api)
+
+
 
 ### Cloning Steps
 
