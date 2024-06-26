@@ -26,13 +26,11 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
+[Nest](https://github.com/nestjs/nest) framework TypeScript beginner friendly e-commerce project starter repository.
 
 - This project was an assignment required to implement very basic APIs for an e-commerce app.
 - It includes basic CRUD operations for two main entities: cart and order.
-- It is beginner-friendly, focusing on learning Nest.js and Swagger.
-- The project was completed within two days.
+- It is beginner-friendly, focusing on learning Nest.js, TypeScript, and Swagger.
 
 ### Resources to Learn Nest.js
 
@@ -41,11 +39,31 @@ To learn more about Nest.js, you can check out the following resources:
 - [Nest.js Official Documentation](https://docs.nestjs.com/)
 - [YouTube Tutorial: Nest.js Crash Course](https://youtu.be/GHTA143_b-s?si=TSMXYOfi9utLHTYb)
 
+### Cloning Steps
+
+To clone this repository and get started, use the following commands:
+
+```bash
+$ git clone https://github.com/rraneemm/slash-ecommerce.git
+```
+
 ## Installation
 
 ```bash
 $ pnpm install
 ```
+
+## Docker Setup
+
+To run the application with Docker Compose, follow these steps:
+
+**Build and start the Docker containers:**
+
+```bash
+$ docker-compose up -d
+```
+
+This command will start the application containers in detached mode.
 
 ## Running the app
 
@@ -55,55 +73,7 @@ $ pnpm run start
 
 # watch mode
 $ pnpm run start:dev
-
-# production mode
-$ pnpm run start:prod
 ```
-
-## Docker Setup
-
-To run the application with Docker Compose, follow these steps:
-
-1. **Clone the repository:**
-
-   ```bash
-   $ git clone https://github.com/nestjs/nest.git
-   $ cd nest
-   ```
-
-2. **Build and start the Docker containers:**
-
-   ```bash
-   $ docker-compose up -d
-   ```
-
-   This command will start the application containers in detached mode.
-   
-  3. **Access Swagger UI:**
-
-     Once the application is running, you can access the Swagger UI to explore and test the API endpoints. The Swagger UI is typically available at:
-
-     [http://localhost:3000/api](http://localhost:3000/api)
-  
-
-### Cloning Steps
-
-To clone this repository and get started, use the following commands:
-
-```bash
-$ git clone https://github.com/nestjs/nest.git
-$ cd nest
-```
-
-### Running Environment
-
-Make sure you have Node.js and pnpm installed. Then, install dependencies and start the application:
-
-```bash
-$ pnpm install
-$ pnpm run start:dev
-```
-
 
 ## Testing API Endpoints
 
@@ -114,16 +84,63 @@ You can test the API endpoints using Postman. Import the provided collection int
 3. Import the collection `NestJS_API.postman_collection.json` located in the `postman` directory.
 4. Test the endpoints as needed.
 
-## Database Diagram
-This is a diagram that showcases the database relations and entities.
+## [Database Diagram](https://dbdocs.io/ranyseleem/simple-e-commerce?view=relationships)
 
-**Database Diagram** at 
+![Database Diagram](./db-diagram/simple-e-commerce.png)
 
-`db-diagram/e-commerce assessment.pdf`
+## Dependencies Visualization
 
-OR
+```mermaid
+    flowchart LR
 
-https://dbdocs.io/ranyseleem/simple-e-commerce?view=relationships
+    Src["src"]
+
+    Prisma["prisma"]
+
+    Postman["postman"]
+
+    DockerCompose["docker-compose.yml"]
+
+
+    Carts["carts"]
+    Products["products"]
+    Orders["orders"]
+    Users["users"]
+    PrismaSrc["prisma"]
+
+
+    Src --> Carts
+    Src --> Products
+    Src --> Orders
+    Src --> Users
+    Src --> PrismaSrc
+
+    Postman --> PostmanCollection["NestJS APIs.postman_collection.json"]
+
+    PrismaSrc --> PrismaModule["prisma.module.ts"]
+    PrismaSrc --> PrismaService["prisma.service.ts"]
+
+    Carts --> CartsModule["carts.module.ts"]
+    Carts --> CartsDto["carts.dto.ts"]
+    Carts --> CartsService["carts.service.ts"]
+    Carts --> CartsController["carts.controller.ts"]
+
+     Products --> ProductsModule["products.module.ts"]
+    Products --> ProductsDto["product.dto.ts"]
+    Products --> ProductsService["products.service.ts"]
+    Products --> ProductsController["products.controller.ts"]
+
+    Orders --> OrdersModule["orders.module.ts"]
+    Orders --> OrdersDto["order.dto.ts"]
+    Orders --> OrdersService["orders.service.ts"]
+    Orders --> OrdersController["orders.controller.ts"]
+
+    Users --> UsersModule["users.module.ts"]
+    Users --> UsersDto["users.dto.ts"]
+    Users --> UsersService["users.service.ts"]
+    Users --> UsersController["users.controller.ts"]
+
+```
 
 ## Contribution
 
@@ -132,7 +149,7 @@ This project welcomes contributions from anyone interested in learning or improv
 ### How to Contribute
 
 1. Fork the repository and clone it locally.
-   
+
    ```bash
    $ git clone https://github.com/your-username/nest.git
    $ cd nest
@@ -173,7 +190,6 @@ This project welcomes contributions from anyone interested in learning or improv
 
 By contributing to this project, you'll gain valuable experience with Nest.js and software development best practices. Don't hesitate to ask questions or seek guidance if you're new to contributing to open-source projects.
 
-
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
@@ -182,7 +198,6 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 - [Raneem Yasser](ranyseleem@gmail.com)
 
-  
 ## License
 
 Nest is [MIT licensed](LICENSE).
